@@ -10,13 +10,9 @@ module("Acceptances - Index", {
 });
 
 test("index renders", function(){
-  expect(3);
+  expect(1);
 
   visit('/').then(function(){
-    ok(exists("h2:contains('Welcome to Ember.js')"));
-
-    var list = find("ul li");
-    equal(list.length, 3);
-    equal(list.text(), "redyellowblue");
+    ok(exists("h2:contains('Crushing it!')"));
   });
 });
