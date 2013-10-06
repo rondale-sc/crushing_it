@@ -3,6 +3,28 @@ $black: #4d4d4d
 $keyboard: #f5f3f1
 $text: #555
 
+/* Mixins */
+
+= border-radius($radius)
+  -moz-border-radius: $radius
+  border-radius: $radius
+= border-top-radius($radius)
+  border-top-left-radius: $radius
+  border-top-right-radius: $radius
+= border-bottom-radius($radius)
+  border-bottom-left-radius: $radius
+  border-bottom-right-radius: $radius
+= border-left-radius($radius)
+  border-top-left-radius: $radius
+  border-bottom-left-radius: $radius
+= border-right-radius($radius)
+  border-top-right-radius: $radius
+  border-bottom-right-radius: $radius
+= box-sizing($type: border-box)
+  @each $prefix in moz, ms, webkit
+    -#{$prefix}-box-sizing: $type
+  box-sizing: $type
+
 /* -------------------------------------
  * style
  * ------------------------------------- */
@@ -17,6 +39,33 @@ body
   color: $text
   text-shadow: 0 0 1px rgba(0,0,0,0.1)
   background: #C7DBE5
+
+#title
+  margin-bottom: 5px
+
+#output
+  width: 860px
+  margin-top: 20px
+  margin-bottom: 20px
+  padding-left: 10px
+  padding-right: 10px
+  min-height: 135px
+  border: 5px solid $black
+  border-radius: 5px
+  font-size: 72pt
+
+#totalCrushings
+  float: right
+  clear: both
+  border: 5px dashed $black
+  display: inline-block
+  min-height: 150px
+  min-width: 150px
+  padding: 50px 0 0 0
+  +box-sizing
+  +border-radius(99px)
+  text-align: center
+  font-weight: bold
 
 /*------- Keyboard -------*/
 

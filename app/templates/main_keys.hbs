@@ -1,6 +1,6 @@
 <div id="main">
-  {{#each key in mainKeys itemController="key"}}
-  <div {{ bind-attr class=keyClass }}>
+  {{#each mainKeys itemController="key"}}
+  <div {{ bind-attr class="keyClass" }}>
     <div class="keycap">
       {{primary}}</br>{{alt}}
       {{#if side}}

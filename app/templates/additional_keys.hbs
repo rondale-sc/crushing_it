@@ -1,13 +1,13 @@
 <div id="addition_wrap">
   <div id="addition">
-    {{#each key in additionalKeys itemController="key"}}
+    {{#each additionalKeys itemController="key"}}
     <div {{ bind-attr class=keyClass }}>
       <div class="keycap">
-	<span class="top">{{alt}}</span>
-	<span class="bottom">{{primary}}</span>
-	{{#if side}}
-	<span class="side">{{side}}</span>
-	{{/if}}
+        <span class="top">{{alt}}</span>
+        <span class="bottom">{{primary}}</span>
+        {{#if side}}
+        <span class="side">{{side}}</span>
+        {{/if}}
       </div>
     </div>
     {{/each}}
