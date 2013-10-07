@@ -43,7 +43,7 @@ Key.FIXTURES = [
   { id: 26,  side: "Pus/Brk",   primary: "P",        keyCode: 80,    alt: "",       htmlClass: "key",              additional: false,  mousetrap: false },
   { id: 27,  side: "↑",         primary: "[",        keyCode: 219,   alt: "{",      htmlClass: "key",              additional: false,  mousetrap: false },
   { id: 28,  side: "",          primary: "]",        keyCode: 221,   alt: "}",      htmlClass: "key",              additional: false,  mousetrap: false },
-  { id: 29,  side: "BS Clear",  primary: "Delete",   keyCode: 8,     alt: "",       htmlClass: "f_key",            additional: false,  mousetrap: "del"},
+  { id: 29,  side: "BS Clear",  primary: "Delete",   keyCode: 8,     alt: "",       htmlClass: "f_key",            additional: false,  mousetrap: "backspace"},
   { id: 30,  side: "",          primary: "Control",  keyCode: 17,    alt: "",       htmlClass: "f_key",            additional: false,  mousetrap: "ctrl"},
   { id: 31,  side: "Vol_Dn",    primary: "A",        keyCode: 65,    alt: "",       htmlClass: "key",              additional: false,  mousetrap: false },
   { id: 32,  side: "Vol_Up",    primary: "S",        keyCode: 83,    alt: "",       htmlClass: "key",              additional: false,  mousetrap: false },

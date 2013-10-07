@@ -10,8 +10,8 @@ var IndexRoute = Ember.Route.extend({
 
     keys.forEach(function(key){
       var bind = key.get('mousetrapBinding');
-      Mousetrap.bind(bind, function(e){ self.pressed(key) }, 'keydown');
-      Mousetrap.bind(bind, function(e){ self.unpressed(key) }, 'keyup');
+      Mousetrap.bind(bind, function(e){ self.pressed(key); return false; }, 'keydown');
+      Mousetrap.bind(bind, function(e){ self.unpressed(key); return false; }, 'keyup');
     });
   },
   pressed: function(key){
