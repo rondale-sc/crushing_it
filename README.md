@@ -1,6 +1,6 @@
 # Crushing It
 
-As you progress through life, sometimes you'll wonder to yourself am I crushing it.  Well, this repo may have the answer.  Find out for yourself here: [Crushing it](crushing-it.jonathan-jackson.net).
+As you progress through life, sometimes you'll wonder to yourself am I crushing it.  Well, this repo may have the answer.  Find out for yourself here: [Crushing it](http://crushing-it.jonathan-jackson.net).
 
 # In all seriousness
 
